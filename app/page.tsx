@@ -372,7 +372,30 @@ const menuSections = [
 
 
 
-const themeConfigs = {
+type ThemeConfig = {
+  name: string;
+  welcomeBg: string;
+  menuBg: string;
+  cardBg: string;
+  primary: string;
+  dark: string;
+  accent: string;
+  accentSoft: string;
+  text: string;
+  muted: string;
+  border: string;
+  banner: boolean;
+  icon: string;
+  greeting: string;
+  subtitle: string;
+  description: string;
+  cta: string;
+  specialTitle: string;
+  specialLabel: string;
+  specialNote: string;
+};
+
+const themeConfigs: Record<string, ThemeConfig> = {
   classic: {
     name: "Classic",
     welcomeBg: "#24170f", menuBg: "#f1e4d2", cardBg: "#fffaf4",
